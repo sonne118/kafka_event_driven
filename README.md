@@ -1,1 +1,1 @@
-Event Driven with Apache Kafka using chema Registry Avro Serializer and Azure Event Hubs
+Event Driven with Apache Kafka using schema Registry Avro Serializer and Azure Event Hubs
