@@ -58,13 +58,13 @@ namespace PM.Employee
             }
             else
             {
-                //var schemaRegistryClientAz =
-                //    new SchemaRegistryClient(Configuration["SchemaRegistryUrlAz"], new DefaultAzureCredential());
-                //var schemaGroupName = Configuration["SchemaRegistryGroupNameAz"];
-                //kafkaAvroAsyncKeySerializer =
-                //    new KafkaAvroAsyncSerializer<string>(schemaRegistryClientAz, schemaGroupName);
-                //kafkaAvroAsyncValueSerializer =
-                //    new KafkaAvroAsyncSerializer<LeaveApplicationReceived>(schemaRegistryClientAz, schemaGroupName);
+                var schemaRegistryClientAz =
+                    new SchemaRegistryClient(Configuration["SchemaRegistryUrlAz"], new DefaultAzureCredential());
+                var schemaGroupName = Configuration["SchemaRegistryGroupNameAz"];
+                kafkaAvroAsyncKeySerializer =
+                    new KafkaAvroAsyncSerializer<string>(schemaRegistryClientAz, schemaGroupName);
+                kafkaAvroAsyncValueSerializer =
+                    new KafkaAvroAsyncSerializer<LeaveApplicationReceived>(schemaRegistryClientAz, schemaGroupName);
             }
 
             using var producer = new ProducerBuilder<string, LeaveApplicationReceived>(_producerConfig)
@@ -80,21 +80,21 @@ namespace PM.Employee
             while (true)
             {
 
-                //var empEmail = ReadLine.Read("Enter your employee Email (e.g. none@example-company.com): ",
-                //    "none@example.com").ToLowerInvariant();
-                //var empDepartment = ReadLine.Read("Enter your department code (HR, IT, OPS): ").ToUpperInvariant();
-                //var leaveDurationInHours =
-                //    int.Parse(ReadLine.Read("Enter number of hours of leave requested (e.g. 8): ", "8"));
-                //var leaveStartDate = DateTime.ParseExact(ReadLine.Read("Enter vacation start date (dd-mm-yy): ",
-                //    $"{DateTime.Today:dd-mm-yy}"), "dd-mm-yy", CultureInfo.InvariantCulture);
+                var empEmail = ReadLine.Read("Enter your employee Email (e.g. none@example-company.com): ",
+                    "none@example.com").ToLowerInvariant();
+                var empDepartment = ReadLine.Read("Enter your department code (HR, IT, OPS): ").ToUpperInvariant();
+                var leaveDurationInHours =
+                    int.Parse(ReadLine.Read("Enter number of hours of leave requested (e.g. 8): ", "8"));
+                var leaveStartDate = DateTime.ParseExact(ReadLine.Read("Enter vacation start date (dd-mm-yy): ",
+                    $"{DateTime.Today:dd-mm-yy}"), "dd-mm-yy", CultureInfo.InvariantCulture);
 
-                var empEmail = "eee@ukr.net";
+                //var empEmail = "eee@ukr.net";
 
-                var empDepartment = "OPS";
+                //var empDepartment = "OPS";
 
-                var leaveDurationInHours = 8;
+                //var leaveDurationInHours = 8;
 
-                var leaveStartDate = DateTime.Now.AddHours(h++);
+                //var leaveStartDate = DateTime.Now.AddHours(h++);
                 
                 var leaveApplication = new LeaveApplicationReceived
                 {

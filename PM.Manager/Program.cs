@@ -165,13 +165,13 @@ namespace PM.Manager
             }
             else
             {
-                //var schemaRegistryClientAz =
-                //    new SchemaRegistryClient(Configuration["SchemaRegistryUrlAz"], new DefaultAzureCredential());
-                //var schemaGroupName = Configuration["SchemaRegistryGroupNameAz"];
-                //kafkaAvroAsyncKeySerializer =
-                //    new KafkaAvroAsyncSerializer<string>(schemaRegistryClientAz, schemaGroupName);
-                //kafkaAvroAsyncValueSerializer =
-                //    new KafkaAvroAsyncSerializer<LeaveApplicationProcessed>(schemaRegistryClientAz, schemaGroupName);
+                var schemaRegistryClientAz =
+                    new SchemaRegistryClient(Configuration["SchemaRegistryUrlAz"], new DefaultAzureCredential());
+                var schemaGroupName = Configuration["SchemaRegistryGroupNameAz"];
+                kafkaAvroAsyncKeySerializer =
+                    new KafkaAvroAsyncSerializer<string>(schemaRegistryClientAz, schemaGroupName);
+                kafkaAvroAsyncValueSerializer =
+                    new KafkaAvroAsyncSerializer<LeaveApplicationProcessed>(schemaRegistryClientAz, schemaGroupName);
             }
 
             using var producer = new ProducerBuilder<string, LeaveApplicationProcessed>(_producerConfig)
