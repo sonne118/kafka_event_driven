@@ -7,10 +7,10 @@ using Confluent.Kafka.SyncOverAsync;
 using Confluent.SchemaRegistry;
 using Confluent.SchemaRegistry.Serdes;
 using Microsoft.Extensions.Configuration;
-using TimeOff.Core;
-using TimeOff.Models;
+using PM.Core;
+using PM.Models;
 
-namespace TimeOff.ResultReader
+namespace PM.ResultReader
 {
     internal class Program
     {

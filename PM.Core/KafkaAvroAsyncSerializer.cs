@@ -6,7 +6,7 @@ using Azure.Data.SchemaRegistry;
 using Confluent.Kafka;
 using Microsoft.Azure.Data.SchemaRegistry.ApacheAvro;
 
-namespace TimeOff.Core
+namespace PM.Core
 {
     public class KafkaAvroAsyncSerializer<T> : IAsyncSerializer<T>
     {

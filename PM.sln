@@ -9,15 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOff.Core", "TimeOff.Core\TimeOff.Core.csproj", "{32E34F77-D677-40E5-9041-72554750ECA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PM.Core", "PM.Core\PM.Core.csproj", "{32E34F77-D677-40E5-9041-72554750ECA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOff.Employee", "TimeOff.Employee\TimeOff.Employee.csproj", "{F6C7A79A-3BEB-4796-820E-BB8C6774835A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PM.Employee", "PM.Employee\PM.Employee.csproj", "{F6C7A79A-3BEB-4796-820E-BB8C6774835A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOff.Manager", "TimeOff.Manager\TimeOff.Manager.csproj", "{50E51CD3-091B-49D3-B6AA-4D4616FF2996}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PM.Manager", "PM.Manager\PM.Manager.csproj", "{50E51CD3-091B-49D3-B6AA-4D4616FF2996}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOff.Models", "TimeOff.Models\TimeOff.Models.csproj", "{2C27188C-DE42-4503-8890-80D60E51DA92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PM.Models", "PM.Models\PM.Models.csproj", "{2C27188C-DE42-4503-8890-80D60E51DA92}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOff.ResultReader", "TimeOff.ResultReader\TimeOff.ResultReader.csproj", "{0B9FF56E-7146-42FC-864F-C9E31B36F553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PM.ResultReader", "PM.ResultReader\PM.ResultReader.csproj", "{0B9FF56E-7146-42FC-864F-C9E31B36F553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

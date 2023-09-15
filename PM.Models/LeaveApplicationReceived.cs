@@ -5,7 +5,7 @@
 //    is regenerated
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace TimeOff.Models
+namespace PM.Models
 {
 	using System;
 	using System.Collections.Generic;

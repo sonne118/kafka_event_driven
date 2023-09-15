@@ -1,4 +1,4 @@
-﻿namespace TimeOff.Models
+﻿namespace PM.Models
 {
     public enum Departments : byte
     {

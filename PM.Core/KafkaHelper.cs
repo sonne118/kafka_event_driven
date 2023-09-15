@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Confluent.Kafka;
 using Confluent.Kafka.Admin;
 
-namespace TimeOff.Core
+namespace PM.Core
 {
     public static class KafkaHelper
     {

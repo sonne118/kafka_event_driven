@@ -4,7 +4,7 @@ using Confluent.Kafka;
 using Confluent.SchemaRegistry;
 using Microsoft.Extensions.Configuration;
 
-namespace TimeOff.Core
+namespace PM.Core
 {
     public class ConfigReader
     {

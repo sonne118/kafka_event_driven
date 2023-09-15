@@ -1,4 +1,4 @@
-﻿namespace TimeOff.Core
+﻿namespace PM.Core
 {
     public static class ApplicationConstants
     {

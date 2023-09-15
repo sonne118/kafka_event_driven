@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TimeOff.Core\TimeOff.Core.csproj" />
-    <ProjectReference Include="..\TimeOff.Models\TimeOff.Models.csproj" />
+    <ProjectReference Include="..\PM.Core\PM.Core.csproj" />
+    <ProjectReference Include="..\PM.Models\PM.Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>

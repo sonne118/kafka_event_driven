@@ -7,10 +7,10 @@ using Confluent.Kafka;
 using Confluent.SchemaRegistry;
 using Confluent.SchemaRegistry.Serdes;
 using Microsoft.Extensions.Configuration;
-using TimeOff.Core;
-using TimeOff.Models;
+using PM.Core;
+using PM.Models;
 
-namespace TimeOff.Employee
+namespace PM.Employee
 {
     internal class Program
     {
